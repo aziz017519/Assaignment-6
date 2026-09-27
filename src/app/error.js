@@ -1,6 +1,6 @@
 "use client";
 
-// API ডাউন থাকলে বা কোনো error হলে এই পেজ দেখাবে
+
 export default function Error({ reset }) {
   return (
     <section className="mx-auto flex max-w-xl flex-col items-center px-4 py-24 text-center">
