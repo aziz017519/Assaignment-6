@@ -19,7 +19,7 @@ export default function MyPlanPage() {
   const [sortBy, setSortBy] = useState("duration");
 
   const list = tab === "plan" ? plan : saved;
-  // বড় থেকে ছোট ক্রমে সাজানো (মূল array বদলাই না)
+  
   const sortKey = sortOptions[sortBy].key;
   const sortedList = [...list].sort((a, b) => b[sortKey] - a[sortKey]);
 
@@ -90,7 +90,7 @@ export default function MyPlanPage() {
         </label>
       </div>
 
-      {/* List */}
+     
       <div className="mt-6">
         {!ready ? (
           <Loader />
