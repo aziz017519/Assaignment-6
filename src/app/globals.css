@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Figma ডিজাইন থেকে নেওয়া রং ও ফন্ট */
+
 @theme {
   --color-ink: #0c0d10;
   --color-ink-deep: #090a0d;
@@ -29,7 +29,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* #library-তে স্ক্রল করলে sticky navbar-এর নিচে ঢেকে যাবে না */
 #library {
   scroll-margin-top: 120px;
 }
