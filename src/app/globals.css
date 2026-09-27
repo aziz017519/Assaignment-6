@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Figma ডিজাইন থেকে নেওয়া রং ও ফন্ট */
+@theme {
+  --color-ink: #0c0d10;
+  --color-ink-deep: #090a0d;
+  --color-surface: #15171d;
+  --color-surface-2: #1f232b;
+  --color-line: #222630;
+  --color-line-soft: #1c1f26;
+  --color-muted: #9ca3af;
+  --color-lime: #c2f800;
+  --color-lime-bright: #ccff00;
+  --color-lime-deep: #1a2312;
+
+  --font-display: var(--font-oswald), "Oswald", "Arial Narrow", sans-serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-ink);
+}
+
+body {
+  background-color: var(--color-ink);
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* #library-তে স্ক্রল করলে sticky navbar-এর নিচে ঢেকে যাবে না */
+#library {
+  scroll-margin-top: 120px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
