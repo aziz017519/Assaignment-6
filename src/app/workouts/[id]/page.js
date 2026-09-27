@@ -14,7 +14,7 @@ export default async function WorkoutDetailsPage({ params }) {
   const { id } = await params;
   const workout = await getWorkout(id);
 
-  // ভুল id হলে 404 পেজ
+  
   if (!workout) notFound();
 
   const specs = [
