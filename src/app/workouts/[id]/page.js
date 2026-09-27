@@ -29,7 +29,6 @@ export default async function WorkoutDetailsPage({ params }) {
 
   return (
     <article className="mx-auto grid max-w-7xl gap-8 px-4 pt-8 sm:px-6 sm:pt-12 lg:grid-cols-[minmax(0,540px)_1fr] lg:gap-14">
-      {/* বাম পাশ: ছবি */}
       <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-surface-2 lg:sticky lg:top-28 lg:aspect-[540/710] lg:self-start">
         <Image
           src={workout.image}
@@ -41,7 +40,7 @@ export default async function WorkoutDetailsPage({ params }) {
         />
       </div>
 
-      {/* ডান পাশ: তথ্য */}
+     
       <div>
         <h1 className="font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl">
           {workout.name}
