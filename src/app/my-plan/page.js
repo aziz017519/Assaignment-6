@@ -39,7 +39,7 @@ export default function MyPlanPage() {
       <h1 className="font-display text-4xl font-bold uppercase tracking-tight text-white">My Plan</h1>
       <p className="mt-2 text-sm text-muted">Cap of five lifts for today. Finish them, then load more.</p>
 
-      {/* Metrics summary */}
+      
       <div className="mt-8 grid grid-cols-3 rounded-2xl border border-line bg-surface p-3 sm:p-5">
         {metrics.map((m, i) => (
           <div key={m.label} className={`px-3 py-2 sm:px-5 ${i > 0 ? "border-l border-line" : ""}`}>
@@ -51,7 +51,7 @@ export default function MyPlanPage() {
         ))}
       </div>
 
-      {/* Tabs + Sort */}
+      
       <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div role="tablist" className="inline-flex self-start rounded-xl border border-line bg-surface p-1">
           {tabs.map((t) => (
